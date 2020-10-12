@@ -1,4 +1,4 @@
-import { Layout, Menu } from "antd";
+import { Layout } from "antd";
 import React, { useState } from "react";
 import "./style.css";
 import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
@@ -15,8 +15,8 @@ export default function App() {
   };
   return (
     <div className="App">
-      <Layout>
-        <SidePanel />
+      <Layout style={{minHeight: '100vh'}}>
+        <SidePanel collapsed={collapsed} />
         <Layout className="site-layout">
           <Header className="site-layout-background" style={{ padding: 0 }}>
             {React.createElement(

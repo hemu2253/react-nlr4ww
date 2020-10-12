@@ -1,10 +1,13 @@
 import { Menu } from "antd";
 import React from "react";
+import {Layout} from "antd";
 import {
   UserOutlined,
   VideoCameraOutlined,
   UploadOutlined
 } from "@ant-design/icons";
+
+const { Sider } = Layout;
 
 function SidePanel({ collapsed }) {
   return (
